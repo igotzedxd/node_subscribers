@@ -5,12 +5,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/styles/index.css">
-    <script src="/scripts/index.js" defer></script>
+    <script src="/scripts/index.js" type="module"></script>
     <title>Landing</title>
 </head>
 
 <body>
-    HELLO
+    <form id="userForm">
+        <fieldset>
+            <legend>Opret Bruger</legend>
+
+            <input name="name" placeholder="Indtast Navn"></input>
+            <input name="age" placeholder="Indtast Alder"></input>
+            <input name="size" placeholder="Large"></input>
+            <button type="submit">submit</button>
+
+        </fieldset>
+
+    </form>
+    <form onSubmit="submitEmp" id="empForm">
+        <fieldset>
+            <legend>Opret Employee</legend>
+
+            <input name="name" placeholder="Indtast Navn"></input>
+            <input name="email" placeholder="Indtast Email"></input>
+            <input type="file" name="picture"></input>
+            <button type="submit">submit</button>
+
+        </fieldset>
+        <p id="empMsg"></p>
+
+    </form>
 </body>
 
 </html>
